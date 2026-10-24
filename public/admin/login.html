@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Sign in | Hillview Orders</title>
+  <link rel="icon" href="/assets/emblem.svg" type="image/svg+xml">
+  <style>
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; font-family: Inter, system-ui, sans-serif; background: #1F3A2B; padding: 20px; }
+    form { background: #FBF8F1; padding: 36px; border-radius: 20px; width: min(380px, 100%); box-shadow: 0 20px 50px rgba(0,0,0,.3); text-align: center; }
+    img { width: 84px; height: 84px; margin: 0 auto 10px; display: block; }
+    h1 { font-family: Georgia, serif; color: #1F3A2B; margin: 0 0 4px; font-size: 1.5rem; }
+    p { color: #5B6359; margin: 0 0 22px; font-size: .92rem; }
+    input { width: 100%; box-sizing: border-box; font: inherit; padding: 12px 14px; border-radius: 12px; border: 1.5px solid #EAE1CB; margin-bottom: 14px; }
+    button { width: 100%; font: inherit; font-weight: 700; padding: 12px; border-radius: 999px; border: 0; background: #B5322B; color: #fff; cursor: pointer; }
+    button:disabled { opacity: .6; }
+    .err { color: #B5322B; font-weight: 600; min-height: 1.3em; margin: 12px 0 0; }
+  </style>
+</head>
+<body>
+  <form id="f">
+    <img src="/assets/emblem.svg" alt="">
+    <h1>Hillview Orders</h1>
+    <p>Enter the dashboard password.</p>
+    <input id="pw" type="password" autocomplete="current-password" placeholder="Password" required aria-label="Password">
+    <button type="submit">Sign in</button>
+    <p class="err" id="err" role="alert"></p>
+  </form>
+  <script>
+    (function () {
+      var f = document.getElementById('f'), err = document.getElementById('err'), btn = f.querySelector('button');
+      fetch('/admin/api/status').then(function (r) { return r.json(); }).then(function (s) {
+        if (!s.loginEnabled) { err.textContent = 'Login is disabled until ADMIN_PASSWORD is set on the server.'; btn.disabled = true; }
+      });
+      f.addEventListener('submit', function (e) {
+        e.preventDefault();
+        err.textContent = '';
+        btn.disabled = true;
+        fetch('/admin/api/login', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ password: document.getElementById('pw').value }) })
+          .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
+          .then(function (res) { if (res.ok) location.href = '/admin'; else { err.textContent = res.j.error || 'Sign-in failed.'; btn.disabled = false; } })
+          .catch(function () { err.textContent = 'Network error.'; btn.disabled = false; });
+      });
+    })();
+  </script>
+</body>
+</html>

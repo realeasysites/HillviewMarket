@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Hillview Market &amp; Deli">
+  <circle cx="60" cy="60" r="57" fill="#F4EEDF" stroke="#1F3A2B" stroke-width="5"/>
+  <circle cx="60" cy="60" r="50" fill="none" stroke="#1F3A2B" stroke-width="1.2" opacity=".5"/>
+  <circle cx="78" cy="40" r="9" fill="#E2A93B"/>
+  <path d="M14 70 C34 52 52 58 64 52 C78 45 92 50 106 62 L106 78 L14 78 Z" fill="#7C9A6B"/>
+  <path d="M14 76 C36 62 60 70 82 62 C92 58 100 60 106 64 L106 82 L14 82 Z" fill="#1F3A2B"/>
+  <g fill="#1F3A2B">
+    <path d="M30 66 l7 -20 l7 20 z M31 58 l6 -16 l6 16 z"/>
+    <path d="M40 64 l5 -14 l5 14 z"/>
+    <path d="M84 62 l6 -18 l6 18 z M85 55 l5 -14 l5 14 z"/>
+  </g>
+  <path d="M56 58 l8 -7 l8 7 v8 h-16 z" fill="#6B4E31"/>
+  <rect x="62" y="60" width="4" height="6" fill="#F4EEDF"/>
+  <text x="60" y="97" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-weight="700" fill="#1F3A2B">Hillview</text>
+</svg>

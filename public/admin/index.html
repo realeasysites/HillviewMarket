@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Order Dashboard | Hillview</title>
+  <link rel="icon" href="/assets/emblem.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+  <header class="bar">
+    <div class="brand"><img src="/assets/emblem.svg" alt="" width="40" height="40"><span>Hillview <em>Orders</em></span></div>
+    <div class="bar-actions">
+      <a href="/" target="_blank" rel="noopener">View site</a>
+      <button id="logout" type="button">Sign out</button>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="stats" id="stats" aria-label="Summary"></section>
+    <div class="filters" role="tablist" id="filters">
+      <button data-f="open" class="active" type="button">Open</button>
+      <button data-f="all" type="button">All</button>
+      <button data-f="new" type="button">New</button>
+      <button data-f="confirmed" type="button">Confirmed</button>
+      <button data-f="ready" type="button">Ready</button>
+      <button data-f="picked_up" type="button">Picked up</button>
+      <button data-f="closed" type="button">Closed</button>
+      <button id="refresh" class="refresh" type="button">Refresh</button>
+    </div>
+    <section id="list" class="list" aria-live="polite"></section>
+  </main>
+  <script src="/admin/admin.js"></script>
+</body>
+</html>

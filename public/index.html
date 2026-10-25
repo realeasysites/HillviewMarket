@@ -23,7 +23,8 @@
       {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "06:00", "closes": "21:00"},
       {"@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "07:00", "closes": "20:00"}
     ],
-    "servesCuisine": ["Subs", "Pizza", "Burgers", "Chicken tenders"],
+    "servesCuisine": ["Breakfast", "Subs", "Pizza", "Burgers", "Chicken tenders"],
+    "hasMenu": "/#menu",
     "sameAs": ["https://www.facebook.com/p/Hillview-market-Deli-61589398065636/"]
   }
   </script>
@@ -51,7 +52,7 @@
         <span class="brand-text"><span class="brand-name">Hillview</span><span class="brand-sub">market &amp; Deli</span></span>
       </a>
       <nav class="nav" id="nav" aria-label="Main">
-        <a href="#deli">The Deli</a>
+        <a href="#menu">Menu</a>
         <a href="#store">The Store</a>
         <a href="#hours">Hours</a>
         <a href="#order">Order Ahead</a>
@@ -72,14 +73,14 @@
         <div class="hero-copy">
           <p class="eyebrow">Back on Buxton Road · Saco, Maine</p>
           <h1>Your neighborhood <span class="script">market &amp; deli.</span></h1>
-          <p class="lead">Subs made your way, hot cheesy pizza, big juicy burgers and crispy tenders — plus the groceries, cold drinks and Maine Lottery you stop in for. One stop, every day.</p>
+          <p class="lead">Breakfast sandwiches from 6 AM, hot and cold subs, 18" pizzas, burgers and jumbo tenders — plus the groceries, cold drinks and Maine Lottery you stop in for. One stop, every day.</p>
           <div class="hero-ctas">
             <a class="btn btn-primary btn-lg" href="tel:+12072940102">Call your order in</a>
             <a class="btn btn-ghost btn-lg" href="#order">Order ahead online</a>
           </div>
           <ul class="hero-points">
-            <li>Opens 6 AM, Mon–Sat</li>
             <li>Made to order</li>
+            <li>Breakfast from 6 AM</li>
             <li>Family-owned</li>
           </ul>
         </div>
@@ -101,7 +102,7 @@
         <span>Friendly service</span><span class="sep">•</span>
         <span>Great prices</span><span class="sep">•</span>
         <span>Maine Lottery</span><span class="sep">•</span>
-        <span>Craft beer &amp; wine</span>
+        <span>Cold beer &amp; wine</span>
       </div>
     </section>
 
@@ -115,33 +116,138 @@
         </div>
         <div class="menu-grid">
           <article class="menu-card">
+            <div class="menu-icon" aria-hidden="true"><svg viewBox="0 0 64 64"><g fill="#D99A45" stroke="#1F3A2B" stroke-width="3"><path d="M14 50c-4-10 0-30 8-34 4 8 2 28-8 34z"/><path d="M30 52c-4-12 0-32 8-36 4 8 2 30-8 36z"/><path d="M44 50c-2-10 2-26 9-29 3 7 0 24-9 29z"/></g></svg></div>
+            <h3>Breakfast</h3>
+            <p class="menu-tag">Hot &amp; ready from 6 AM</p>
+            <p>Egg sandwiches, steak, egg &amp; cheese, breakfast burritos and even breakfast pizza. <strong class="from">From $4.99</strong></p>
+          </article>
+          <article class="menu-card">
             <div class="menu-icon" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M6 34c0-9 12-16 26-16s26 7 26 16" fill="#E8C690" stroke="#1F3A2B" stroke-width="3"/><path d="M6 36h52" stroke="#5F7F53" stroke-width="5" stroke-linecap="round"/><path d="M8 40h48" stroke="#B5322B" stroke-width="4" stroke-linecap="round"/><path d="M6 44c0 4 12 6 26 6s26-2 26-6" fill="#E8C690" stroke="#1F3A2B" stroke-width="3"/></svg></div>
             <h3>Subs</h3>
             <p class="menu-tag">Made fresh, your way</p>
-            <p>Classic deli subs piled high on fresh rolls and built exactly the way you like them.</p>
-          </article>
-          <article class="menu-card">
-            <div class="menu-icon" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M10 30c0-10 10-17 22-17s22 7 22 17z" fill="#E8C690" stroke="#1F3A2B" stroke-width="3"/><path d="M8 34h48" stroke="#5F7F53" stroke-width="4" stroke-linecap="round"/><rect x="9" y="37" width="46" height="7" rx="3.5" fill="#6B4E31"/><path d="M10 47h44" stroke="#E2A93B" stroke-width="3"/><path d="M10 50c0 3 10 5 22 5s22-2 22-5z" fill="#E8C690" stroke="#1F3A2B" stroke-width="3"/></svg></div>
-            <h3>Burgers</h3>
-            <p class="menu-tag">Big, juicy &amp; satisfying</p>
-            <p>Hot off the grill with all the fixings. The kind of lunch that gets you through the afternoon.</p>
-          </article>
-          <article class="menu-card">
-            <div class="menu-icon" aria-hidden="true"><svg viewBox="0 0 64 64"><g fill="#D99A45" stroke="#1F3A2B" stroke-width="3"><path d="M14 50c-4-10 0-30 8-34 4 8 2 28-8 34z"/><path d="M30 52c-4-12 0-32 8-36 4 8 2 30-8 36z"/><path d="M44 50c-2-10 2-26 9-29 3 7 0 24-9 29z"/></g></svg></div>
-            <h3>Chicken Tenders</h3>
-            <p class="menu-tag">Crispy, tender &amp; delicious</p>
-            <p>Golden, crunchy and made to order. Grab a basket for yourself or a tray for the crew.</p>
+            <p>Italians, steak bombs, chicken parm, chopped cheese and more, hot or cold. <strong class="from">From $8.99</strong></p>
           </article>
           <article class="menu-card">
             <div class="menu-icon" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M32 6 L58 54 Q32 62 6 54 Z" fill="#F0C56A" stroke="#1F3A2B" stroke-width="3" stroke-linejoin="round"/><path d="M8 52 Q32 60 56 52" stroke="#C98A3B" stroke-width="5" fill="none" stroke-linecap="round"/><g fill="#B5322B"><circle cx="31" cy="24" r="4.5"/><circle cx="24" cy="40" r="4.5"/><circle cx="39" cy="42" r="4.5"/></g></svg></div>
             <h3>Pizza</h3>
             <p class="menu-tag">Hot, cheesy &amp; made to order</p>
-            <p>Pies baked fresh to order. Feeding the family tonight? Call it in on your way home.</p>
+            <p>Big 18" pies, from classic cheese to buffalo chicken and loaded. Feeding the family? Call it in. <strong class="from">From $13.99</strong></p>
+          </article>
+          <article class="menu-card">
+            <div class="menu-icon" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M10 30c0-10 10-17 22-17s22 7 22 17z" fill="#E8C690" stroke="#1F3A2B" stroke-width="3"/><path d="M8 34h48" stroke="#5F7F53" stroke-width="4" stroke-linecap="round"/><rect x="9" y="37" width="46" height="7" rx="3.5" fill="#6B4E31"/><path d="M10 47h44" stroke="#E2A93B" stroke-width="3"/><path d="M10 50c0 3 10 5 22 5s22-2 22-5z" fill="#E8C690" stroke="#1F3A2B" stroke-width="3"/></svg></div>
+            <h3>Burgers &amp; Tenders</h3>
+            <p class="menu-tag">Big, juicy &amp; satisfying</p>
+            <p>Cheeseburgers, double deckers, BBQ bacon and fried chicken sandwiches, plus jumbo hand-breaded tenders. <strong class="from">From $6.99</strong></p>
           </article>
         </div>
-        <div class="menu-cta">
-          <p>Full menu &amp; prices posted in store — or just ask.</p>
-          <a class="btn btn-primary" href="tel:+12072940102">Call 207-294-0102</a>
+        <div class="full-menu" id="menu">
+          <div class="menu-head">
+            <h3>The full menu</h3>
+            <p>Prices as posted in store. Call ahead and it’ll be ready when you pull in.</p>
+          </div>
+          <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+            <button role="tab" aria-selected="true" aria-controls="m-breakfast" id="t-breakfast">Breakfast</button>
+            <button role="tab" aria-selected="false" aria-controls="m-subs" id="t-subs">Subs</button>
+            <button role="tab" aria-selected="false" aria-controls="m-pizza" id="t-pizza">Pizza</button>
+            <button role="tab" aria-selected="false" aria-controls="m-burgers" id="t-burgers">Burgers</button>
+            <button role="tab" aria-selected="false" aria-controls="m-tenders" id="t-tenders">Tenders &amp; Sides</button>
+          </div>
+          <div class="menu-panels">
+            <section class="menu-panel" role="tabpanel" id="m-breakfast" aria-labelledby="t-breakfast">
+              <h4>Breakfast <span>Served from 6 AM</span></h4>
+              <ul class="mi-list">
+                <li><span class="mi-name">Sausage, Egg &amp; Cheese</span><span class="mi-desc">On an English muffin</span><span class="mi-price">4.99</span></li>
+                <li><span class="mi-name">Bacon, Egg &amp; Cheese</span><span class="mi-desc">On an English muffin</span><span class="mi-price">4.99</span></li>
+                <li><span class="mi-name">Sausage, Egg &amp; Cheese on a Roll</span><span class="mi-price">5.99</span></li>
+                <li><span class="mi-name">Bacon, Egg &amp; Cheese on a Roll</span><span class="mi-price">5.99</span></li>
+                <li><span class="mi-name">Steak, Egg &amp; Cheese on a Roll</span><span class="mi-desc">Shaved steak, egg, cheese</span><span class="mi-price">7.99</span></li>
+                <li><span class="mi-name">Breakfast Burrito</span><span class="mi-desc">Eggs, sausage, cheese, peppers, onions</span><span class="mi-price">9.99</span></li>
+                <li><span class="mi-name">Breakfast Pizza</span><span class="mi-desc">Eggs, bacon, sausage, cheese on pizza crust</span><span class="mi-price">14.99</span></li>
+              </ul>
+            </section>
+            <section class="menu-panel" role="tabpanel" id="m-subs" aria-labelledby="t-subs">
+              <div class="panel-cols">
+                <div>
+                  <h4>Cold Subs</h4>
+                  <p class="size-prices"><span>Small 8.99</span><span>Large 10.99</span><span>Wrap 9.99</span></p>
+                  <ul class="mi-list">
+                <li><span class="mi-name">Ham &amp; Cheese</span><span class="mi-price"></span></li>
+                <li><span class="mi-name">Turkey &amp; Cheese</span><span class="mi-price"></span></li>
+                <li><span class="mi-name">Italian</span><span class="mi-price"></span></li>
+                <li><span class="mi-name">Veggie</span><span class="mi-price"></span></li>
+                <li><span class="mi-name">Chicken Salad</span><span class="mi-price"></span></li>
+                  </ul>
+                  <p class="mi-note">Toppings: lettuce, tomatoes, pickles, onions, peppers, olives, hot pepper relish</p>
+                </div>
+                <div>
+                  <h4>Hot Subs</h4>
+                  <p class="size-prices"><span>Small 10.99</span><span>Large 12.99</span><span>Wrap 11.99</span></p>
+                  <ul class="mi-list">
+                <li><span class="mi-name">Steak &amp; Cheese</span><span class="mi-desc">Tender shaved steak, cheese</span><span class="mi-price"></span></li>
+                <li><span class="mi-name">Steak Bomb</span><span class="mi-desc">Steak, peppers, onions, mushrooms, cheese</span><span class="mi-price"></span></li>
+                <li><span class="mi-name">Sausage</span><span class="mi-desc">Sausage, onions, peppers</span><span class="mi-price"></span></li>
+                <li><span class="mi-name">Meatball</span><span class="mi-desc">Meatballs, marinara, provolone</span><span class="mi-price"></span></li>
+                <li><span class="mi-name">Chopped Cheese</span><span class="mi-desc">Ground beef, cheese, fixings</span><span class="mi-price"></span></li>
+                <li><span class="mi-name">Chicken Bacon Ranch</span><span class="mi-desc">Grilled chicken, bacon, ranch</span><span class="mi-price"></span></li>
+                <li><span class="mi-name">Chicken Parmesan</span><span class="mi-desc">Breaded chicken, marinara, cheese</span><span class="mi-price"></span></li>
+                <li><span class="mi-name">Pastrami &amp; Cheese</span><span class="mi-desc">Grilled pastrami, choice of cheese</span><span class="mi-price"></span></li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <section class="menu-panel" role="tabpanel" id="m-pizza" aria-labelledby="t-pizza">
+              <h4>Pizza <span>Large 18&quot;</span></h4>
+              <ul class="mi-list">
+                <li><span class="mi-name">Cheese</span><span class="mi-desc">The classic</span><span class="mi-price">13.99</span></li>
+                <li><span class="mi-name">Hawaiian</span><span class="mi-desc">Ham, pineapple</span><span class="mi-price">15.99</span></li>
+                <li><span class="mi-name">Chicken Bacon Ranch</span><span class="mi-desc">Ranch base, chicken, bacon</span><span class="mi-price">18.99</span></li>
+                <li><span class="mi-name">Buffalo Chicken</span><span class="mi-desc">Spicy buffalo sauce, chicken</span><span class="mi-price">18.99</span></li>
+                <li><span class="mi-name">Chicken Alfredo</span><span class="mi-desc">Creamy alfredo, chicken</span><span class="mi-price">18.99</span></li>
+                <li><span class="mi-name">Pesto Base</span><span class="mi-desc">Any toppings</span><span class="mi-price">18.99</span></li>
+                <li><span class="mi-name">Loaded</span><span class="mi-desc">Pepperoni, sausage, peppers, onions, mushrooms</span><span class="mi-price">18.99</span></li>
+              </ul>
+              <p class="mi-note">Extra toppings $3 each: pepperoni, sausage, meatballs, chicken, pineapple, mushrooms, veggies. More than 2 toppings = Loaded.</p>
+            </section>
+            <section class="menu-panel" role="tabpanel" id="m-burgers" aria-labelledby="t-burgers">
+              <h4>Burgers &amp; Sandwiches</h4>
+              <ul class="mi-list">
+                <li><span class="mi-name">Cheeseburger</span><span class="mi-desc">Juicy beef, melted cheese, fixings</span><span class="mi-price">6.99</span></li>
+                <li><span class="mi-name">Double Decker</span><span class="mi-desc">Two patties, double cheese</span><span class="mi-price">7.99</span></li>
+                <li><span class="mi-name">BBQ Bacon Burger</span><span class="mi-desc">BBQ sauce, bacon, cheese</span><span class="mi-price">7.99</span></li>
+                <li><span class="mi-name">Bacon Rancher</span><span class="mi-desc">Ranch, bacon, cheese</span><span class="mi-price">7.99</span></li>
+                <li><span class="mi-name">Special Burger</span><span class="mi-desc">Two patties, special sauce, lettuce, pickles, onions</span><span class="mi-price">7.99</span></li>
+                <li><span class="mi-name">Fried Chicken Sandwich</span><span class="mi-desc">Crispy chicken, pickles, mayo</span><span class="mi-price">6.99</span></li>
+                <li><span class="mi-name">Grilled Chicken Sandwich</span><span class="mi-desc">Juicy grilled chicken, fixings</span><span class="mi-price">6.99</span></li>
+              </ul>
+            </section>
+            <section class="menu-panel" role="tabpanel" id="m-tenders" aria-labelledby="t-tenders">
+              <div class="panel-cols">
+                <div>
+                  <h4>Chicken Tenders <span>Fresh, jumbo &amp; hand-breaded</span></h4>
+                  <ul class="mi-list">
+                <li><span class="mi-name">3 Tenders</span><span class="mi-price">6.99</span></li>
+                <li><span class="mi-name">6 Tenders</span><span class="mi-price">11.99</span></li>
+                <li><span class="mi-name">12 Tenders</span><span class="mi-price">19.99</span></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>Finger Foods</h4>
+                  <ul class="mi-list">
+                <li><span class="mi-name">Potato Wedges</span><span class="mi-desc">Seasoned &amp; crispy</span><span class="mi-price">4.99</span></li>
+                <li><span class="mi-name">French Fries</span><span class="mi-desc">Golden &amp; hot</span><span class="mi-price">4.99</span></li>
+                <li><span class="mi-name">Onion Rings</span><span class="mi-desc">Thick &amp; crunchy</span><span class="mi-price">4.99</span></li>
+                <li><span class="mi-name">Mozzarella Sticks</span><span class="mi-desc">Gooey &amp; fried</span><span class="mi-price">6.99</span></li>
+                <li><span class="mi-name">Jalapeño Poppers</span><span class="mi-desc">Spicy &amp; cheesy</span><span class="mi-price">6.99</span></li>
+                <li><span class="mi-name">Wing Dings</span><span class="mi-desc">Saucy wings</span><span class="mi-price">6.99</span></li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="menu-cta">
+            <p>Large variety of beer, wine &amp; tobacco in store (21+).</p>
+            <a class="btn btn-primary" href="tel:+12072940102">Call your order in: 207-294-0102</a>
+          </div>
         </div>
       </div>
     </section>
@@ -153,15 +259,20 @@
           <p class="eyebrow eyebrow-light">More than just great food</p>
           <h2>Your one stop <span class="script">for everyday.</span></h2>
           <p>Out of milk? Need a cold drink for the drive or snacks for the game? Skip the trip into town. Hillview has the everyday stuff, right on Buxton Road.</p>
+          <figure class="store-video">
+            <video autoplay muted loop playsinline preload="metadata" poster="/assets/aisle-poster.jpg" aria-label="The cooler aisle inside Hillview Market &amp; Deli">
+              <source src="/assets/aisle.mp4" type="video/mp4">
+            </video>
+          </figure>
           <a class="btn btn-gold" href="https://maps.google.com/?q=21+Buxton+Rd+Saco+ME+04072" target="_blank" rel="noopener">Get directions</a>
         </div>
         <ul class="store-list">
           <li><strong>Groceries</strong><span>Milk, bread, eggs and the essentials</span></li>
           <li><strong>Snacks</strong><span>Chips, candy and grab-and-go</span></li>
-          <li><strong>Cold beverages</strong><span>Sodas, energy drinks, water &amp; more</span></li>
-          <li><strong>Craft beer &amp; wine</strong><span>A good selection to go with dinner (21+)</span></li>
+          <li><strong>Cold beverages</strong><span>A full wall of coolers: soda, energy drinks, sports drinks, water</span></li>
+          <li><strong>Cold beer &amp; wine</strong><span>A large variety, plus tobacco (21+)</span></li>
           <li><strong>Maine Lottery</strong><span>Scratch tickets and draw games</span></li>
-          <li><strong>And more</strong><span>Doors open at 6 AM for the early crowd</span></li>
+          <li><strong>Packaged ice</strong><span>Right out front by the door</span></li>
         </ul>
       </div>
     </section>

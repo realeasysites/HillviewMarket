@@ -52,6 +52,34 @@
   updateOpenStatus();
   setInterval(updateOpenStatus, 60000);
 
+
+  // Menu tabs (all panels stay visible if JS is off)
+  document.documentElement.classList.add('js');
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.menu-tabs [role="tab"]'));
+  function selectTab(tab, focus) {
+    tabs.forEach(function (t) {
+      var on = t === tab;
+      t.setAttribute('aria-selected', String(on));
+      t.tabIndex = on ? 0 : -1;
+      document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+    });
+    if (focus) tab.focus();
+  }
+  if (tabs.length) {
+    selectTab(tabs[0]);
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { selectTab(t); });
+      t.addEventListener('keydown', function (e) {
+        var n = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+        if (n) { e.preventDefault(); selectTab(tabs[(i + n + tabs.length) % tabs.length], true); }
+      });
+    });
+  }
+
+  // Pause the store video for people who prefer reduced motion
+  var vid = document.querySelector('.store-video video');
+  if (vid && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) { vid.removeAttribute('autoplay'); vid.pause(); }
+
   document.getElementById('year').textContent = new Date().getFullYear();
 
   // Mobile menu
